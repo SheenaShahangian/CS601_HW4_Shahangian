@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page that contains a form 
+    that a site visitor can fill out.">
+    <title>Let's Practice Forms - Assignment 3</title>
+    <!-- link to stylesheet -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- Use of Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700">
+</head>
+<body>
+
+    <!-- this is the header of the page, that contains the logo for the page -->
+    <header>
+        
+        <!-- logo for the page -->
+        <img src="multimedia/calculator-logo.png" alt="logo for this website"
+                class="logo_image">
+
+    </header>
+
+    <main>
+        <section class="form_section">
+            <!-- introduces the user to the form and provides some standard instructions -->
+            <h1>Welcome to the Contact Form!</h1>
+
+            <!-- explanation of what to do -->
+            <p>
+                Please fill out the contents of the form below, and we will 
+                store the results. Thank you!
+            </p>
+
+            <form id="info_form" name="assignment_four_form" action="o http://bucs601.com/submit.php" post="post">
+                
+                <!-- text inputs -->
+
+                <!-- first name -->
+                <label for="firstName">First Name (required):</label>
+                <input type="text" name="firstName" id="firstName" required>
+
+                <br>
+
+                <!-- last name -->
+                <label for="lastName">Last Name (required):</label>
+                <input type="text" name="lastName" id="lastName" required>
+
+                <br>
+
+                <!-- facilitator's name -->
+                <label for="facilitator">Facilitator's Name (required):</label>
+                <input type="text" name="facilitator" id="facilitator" required>
+
+
+                <!-- radio button group -->
+                <p>Which meal do you prefer?</p>
+                <label for="spaghetti">Spaghetti with Meatballs</label>
+                <input type="radio" id="spaghetti" name="meal" value="spaghetti">
+
+                <br>
+
+                <label for="mac">Macaroni and Cheese</label>
+                <input type="radio" id="mac" name="meal" value="macaroni">
+
+                <br>
+
+                <label for="carbonara">Carbonara</label>
+                <input type="radio" id="carbonara" name="meal" value="carbonara">
+
+                <br>
+
+                <!-- checkboxes -->
+                <p>Do you have any food allergies? Check all that apply: </p>
+
+                <label for="tomatoes">Tomatoes</label>
+                <input type="checkbox" id="tomatoes" name="tomatoes">
+
+                <br>
+
+                <label for="garlic">Garlic</label>
+                <input type="checkbox" id="garlic" name="garlic">
+
+                <br>
+
+                <label for="egg">Egg</label>
+                <input type="checkbox" id="egg" name="egg">
+
+                <br>
+
+                <!-- form submit button -->
+                <input type="submit" name="submitButton" value="Submit that Form!">
+
+
+
+            </form>
+           
+
+        </section>
+    </main>
+
+
+    <!-- site footer -->
+    <footer>
+
+        <!-- a copyright message -->
+        <p>Form Practice &copy; Sheena Shahangian</p>
+
+    </footer>
+
+    <!-- JavaScript for the page, placed at bottom, as recommended by textbook -->
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
