@@ -19,7 +19,7 @@
     <header>
         
         <!-- logo for the page -->
-        <img src="multimedia/calculator-logo.png" alt="logo for this website"
+        <img src="multimedia/calculator-logo.png" alt="logo for this form site"
                 class="logo_image">
 
     </header>
@@ -27,15 +27,17 @@
     <main>
         <section class="form_section">
             <!-- introduces the user to the form and provides some standard instructions -->
-            <h1>Welcome to the Contact Form!</h1>
+            <h1>Welcome to the CS 601 Class Dinner Form</h1>
 
             <!-- explanation of what to do -->
             <p>
-                Please fill out the contents of the form below, and we will 
+                We are very pleased to announce the MET CS 601 class dinner! In order to serve you 
+                your preferred meal, will need some quick information from you. Please fill out the 
+                contents of the form below, with your information and food preferences, and we will 
                 store the results. Thank you!
             </p>
 
-            <form id="info_form" name="assignment_four_form" action="o http://bucs601.com/submit.php" post="post">
+            <form id="info_form" name="assignment_four_form" action="" post="post">
                 
                 <!-- text inputs -->
 
@@ -43,11 +45,15 @@
                 <label for="firstName">First Name (required):</label>
                 <input type="text" name="firstName" id="firstName" required>
 
+                <span id="first_name_error_msg">Error Message</span>
+
                 <br>
 
                 <!-- last name -->
                 <label for="lastName">Last Name (required):</label>
                 <input type="text" name="lastName" id="lastName" required>
+
+                <span id="last_name_error_msg">Error Message</span>
 
                 <br>
 
@@ -55,6 +61,9 @@
                 <label for="facilitator">Facilitator's Name (required):</label>
                 <input type="text" name="facilitator" id="facilitator" required>
 
+                <span id="facilitator_error_msg">Error Message</span>
+
+                <br>
 
                 <!-- radio button group -->
                 <p>Which meal do you prefer?</p>
