@@ -46,3 +46,4 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * Per the professor's recommendation, I have opted to use let and const rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
 * I have thoroughly commented all of my code, to make it easy to understand and come back to in the future.
+* It's worth noting that I have wrapped each form input, its label, and its validation message in a div for styling reasons. I have only used a div as a section or article would have resulted in a warning from the validator as they are not good fits in this scenario.

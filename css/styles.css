@@ -5,7 +5,8 @@ body {
     margin: 0;
 }
 
-/* Style for the page's, which is centered at the top */
+
+/* Style for the page's logo, which is centered at the top */
 .logo_image {
     display: block; /*rather than inline */
     margin: 3rem auto; /* center the logo on the page */
@@ -13,12 +14,14 @@ body {
     height:100px;
 }
 
-/* Style of the form section */
+
+/* Style of the form section, which sits above form contents */
 .form_section {
     margin: auto;
     width: 85%; /* DO NOT take up full width of the page */
     text-align: center;
 }
+
 
 /* Style of h1 */
 h1 {
@@ -33,15 +36,19 @@ h1 {
 }
 
 
+/* Style of the form, which should be centered with 80% container width. */
 form {
     width: 80%;
     margin: 0 auto;
 }
 
+
+/* Style of the divs */
 div {
     width: 50%;
     margin: 0 auto;
 }
+
 
 /* Style of paragraphs of text */
 p {
@@ -53,6 +60,7 @@ p {
     margin-left: 5rem;
     margin-right: 5rem;
 }
+
 
 /* Style of paragraphs within the form */
 .form_p {
@@ -71,10 +79,12 @@ input, label {
     margin-top: 1rem;
 }
 
+
 /* Style for labels */
 label {
     display: inline-block;
 }
+
 
 /* Make inputs block level and remove their borders */
 input {
@@ -109,6 +119,7 @@ input[type=submit] {
 
 }
 
+
 /* Style the feedback spans */
 .feedback, .pos_feedback, .neg_feedback {
     display: block;
@@ -119,17 +130,20 @@ input[type=submit] {
     line-height: 1.2rem;
 }
 
+
 /* Style the positive feedback spans */
 .pos_feedback {
     visibility: visible; /* un-hide feedback */
     color: #32a532;
 }
 
+
 /* Style the negative feedback spans */
 .neg_feedback {
     visibility: visible; /* un-hide feedback */
     color: #d41d1d;
 }
+
 
 /* Style of the footer on the page */
 footer {
@@ -138,6 +152,7 @@ footer {
     padding-bottom: 5rem;
     margin-top: 3rem;
 }
+
 
 /* Style of the page's footer */
 footer p {
