@@ -37,45 +37,58 @@
                 store the results. Thank you!
             </p>
 
-            <!-- the contact form -->
-            <form id="info_form" name="assignment_four_form" action="https://bucs601.com/submit.php" method="post">
-                
-                <!-- text inputs -->
+        </section>
 
-                <!-- first name -->
+        <!-- the contact form -->
+        <form id="info_form" name="assignment_four_form" action="https://bucs601.com/submit.php" method="post">
+                
+            <!-- text inputs -->
+
+            <!-- first name -->
+            <div>
                 <label for="firstName">First Name (required):</label>
                 <input type="text" name="firstName" id="firstName" required>
 
+                <!-- span for error message -->
                 <span id="first_name_error_msg" class="feedback">Error Message</span>
+            </div>
+            
 
-                <br>
-
-                <!-- last name -->
+            <!-- last name -->
+            <div>
                 <label for="lastName">Last Name (required):</label>
                 <input type="text" name="lastName" id="lastName" required>
 
+                <!-- span for error message -->
                 <span id="last_name_error_msg" class="feedback">Error Message</span>
+            </div>
 
-                <br>
 
-                <!-- facilitator's name -->
+            <!-- facilitator's name -->
+            <div>
                 <label for="facilitator">Facilitator's Name (required):</label>
                 <input type="text" name="facilitator" id="facilitator" required>
 
+                <!-- span for error message -->
                 <span id="facilitator_error_msg" class="feedback">Error Message</span>
 
-                <br>
+            </div>
 
-                <!-- email address -->
+
+            <!-- email address -->
+            <div>
                 <label for="email">Your Email Address (required):</label>
                 <input type="email" name="email" id="email" required>
 
+                <!-- span for error message -->
                 <span id="email_error_msg" class="feedback">Error Message</span>
+            </div>
 
-                <br>
+            
 
-                <!-- radio button group -->
-                <p>Which meal do you prefer?</p>
+            <!-- radio button group -->
+            <div>
+                <p class="form_p">Which meal do you prefer?</p>
                 <label for="spaghetti">Spaghetti with Meatballs</label>
                 <input type="radio" id="spaghetti" name="meal" value="spaghetti">
 
@@ -89,10 +102,12 @@
                 <label for="carbonara">Carbonara</label>
                 <input type="radio" id="carbonara" name="meal" value="carbonara">
 
-                <br>
+            </div>
 
-                <!-- checkboxes -->
-                <p>Do you have any food allergies? Check all that apply: </p>
+
+            <!-- checkboxes -->
+            <div>
+                <p class="form_p">Do you have any food allergies? Check all that apply: </p>
 
                 <label for="tomatoes">Tomatoes</label>
                 <input type="checkbox" id="tomatoes" name="tomatoes">
@@ -107,17 +122,15 @@
                 <label for="egg">Egg</label>
                 <input type="checkbox" id="egg" name="egg">
 
-                <br>
+            </div>
 
-                <!-- form submit button -->
+            <!-- form submit button -->
+            <div>
                 <input type="submit" name="submitButton" value="Submit that Form!">
+            </div>
 
-
-
-            </form>
+        </form>
            
-
-        </section>
     </main>
 
 
