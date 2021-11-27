@@ -1,0 +1,106 @@
+/* Style of the body of the page, which should take up the browser window */
+body {
+    background-color: #e5e5e5; /* page background is a light grey */
+    width: 100%;
+    margin: 0;
+}
+
+/* Style for the page's, which is centered at the top */
+.logo_image {
+    display: block; /*rather than inline */
+    margin: 3rem auto; /* center the logo on the page */
+    width: 100px; 
+    height:100px;
+}
+
+/* Style of the form section */
+.form_section {
+    margin: auto;
+    width: 85%; /* DO NOT take up full width of the page */
+    text-align: center;
+}
+
+/* Style of h1 */
+h1 {
+    color: #14213d;
+    font-family: "Noto Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700; /* heavier weight for h1 */
+    font-size: 2.7rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    margin: 2rem 1rem 0.2rem 1rem;
+    padding: 1rem;
+}
+
+/* Style of paragraphs of text */
+p {
+    color: #000000;
+    font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300; /* lighter weight for paragraphs of text */
+    font-size: 1.2rem;
+    line-height: 1.5rem; /* breathing room between lines */
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Style the inputs */
+input, label {
+    color: #444444;
+    font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300; /* lighter weight for paragraphs of text */
+    font-size: 1rem;
+    line-height: 1.2rem; /* breathing room between lines */
+    margin-top: 1rem;
+}
+
+/* Style the form's submit button */
+input[type=submit] {
+    color: #ffffff;
+    background-color: #fca311;
+    font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 1rem; /* add breathing room to top of the button */
+    margin-bottom: 1rem; /* add breathing room to bottom of the button */
+    padding: 1rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #e5e5e5;
+    cursor: pointer; /* add pointing finger on hover over button */
+
+}
+
+/* Style the feedback spans */
+.feedback, .pos_feedback, .neg_feedback {
+    visibility: hidden; /* defaults to hidden */
+    font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+/* Style the positive feedback spans */
+.pos_feedback {
+    visibility: visible; /* un-hide feedback */
+    color: #32a532;
+}
+
+/* Style the negative feedback spans */
+.neg_feedback {
+    visibility: visible; /* un-hide feedback */
+    color: #d41d1d;
+}
+
+/* Style of the page's footer */
+footer p {
+    font-family: "Noto Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 400;
+    text-transform: uppercase; /* make footer copyright more noticeable */
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}

@@ -25,6 +25,7 @@ infoForm.addEventListener("submit", (e) => {
 Function that validates the user's inputs.
 */
 function validateUserInput() {
+
     // get the contents of the user's inputs and remove whitespace
     const firstNameContents = firstName.value.trim();
     const lastNameContents = lastName.value.trim();
@@ -83,6 +84,7 @@ function validateUserInput() {
         return false;
     }
 
+    // otherwise, all fields are valid
     else {
         return true;
     }
@@ -95,10 +97,13 @@ first name.
 */
 function showFirstNameErrorMessage() {
     // first name error message to show the user 
-    let msg = "First name must include only letters and be longer than 1 character."
+    let msg = "First name must include only letters and be longer than 1 character.";
 
     // get the error message span for the first name
     const errorSpan = document.getElementById("first_name_error_msg");
+
+    // change class of the span to be the negative feedback
+    errorSpan.className = "neg_feedback";
 
     // show error message
     errorSpan.innerHTML = msg;
@@ -111,10 +116,13 @@ for the first name.
 */
 function showFirstNameValidMessage() {
     // first name error message to show the user 
-    let msg = "Valid input!"
+    let msg = "Valid input!";
 
     // get the error message span for the first name
     const errorSpan = document.getElementById("first_name_error_msg");
+
+    // change class of the span to be the positive feedback
+    errorSpan.className = "pos_feedback";
 
     // show error message
     errorSpan.innerHTML = msg;
@@ -129,10 +137,13 @@ last name.
 function showLastNameErrorMessage() {
 
     // last name error message to show the user 
-    let msg = "Last name must include only letters and be longer than 1 character."
+    let msg = "Last name must include only letters and be longer than 1 character.";
 
     // get the error message span for the last name
     const errorSpan = document.getElementById("last_name_error_msg");
+
+    // change class of the span to be the negative feedback
+    errorSpan.className = "neg_feedback";
 
     // show error message
     errorSpan.innerHTML = msg;
@@ -144,10 +155,13 @@ for the last name.
 */
 function showLastNameValidMessage() {
     // first name error message to show the user 
-    let msg = "Valid input!"
+    let msg = "Valid input!";
 
     // get the error message span for the last name
     const errorSpan = document.getElementById("last_name_error_msg");
+
+    // change class of the span to be the positive feedback
+    errorSpan.className = "pos_feedback";
 
     // show error message
     errorSpan.innerHTML = msg;
@@ -166,6 +180,9 @@ function showFacilitatorErrorMessage() {
     // get the error message span for the facilitator name
     const errorSpan = document.getElementById("facilitator_error_msg");
 
+    // change class of the span to be the negative feedback
+    errorSpan.className = "neg_feedback";
+
     // show error message
     errorSpan.innerHTML = msg;
 }
@@ -177,10 +194,13 @@ for the facilitator name.
 */
 function showFacilitatorValidMessage() {
     // first name error message to show the user 
-    let msg = "Valid input!"
+    let msg = "Valid input!";
 
     // get the error message span for the facilitator name
     const errorSpan = document.getElementById("facilitator_error_msg");
+
+    // change class of the span to be the positive feedback
+    errorSpan.className = "pos_feedback";
 
     // show error message
     errorSpan.innerHTML = msg;

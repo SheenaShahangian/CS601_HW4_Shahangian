@@ -10,8 +10,8 @@
     <!-- link to stylesheet -->
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
     <!-- Use of Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;700">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <header>
         
         <!-- logo for the page -->
-        <img src="multimedia/calculator-logo.png" alt="logo for this form site"
+        <img src="multimedia/dinner-logo.png" alt="pizza food logo"
                 class="logo_image">
 
     </header>
@@ -32,12 +32,13 @@
             <!-- explanation of what to do -->
             <p>
                 We are very pleased to announce the MET CS 601 class dinner! In order to serve you 
-                your preferred meal, will need some quick information from you. Please fill out the 
+                your preferred meal, we will need some quick information from you. Please fill out the 
                 contents of the form below, with your information and food preferences, and we will 
                 store the results. Thank you!
             </p>
 
-            <form id="info_form" name="assignment_four_form" action="" post="post">
+            <!-- the contact form -->
+            <form id="info_form" name="assignment_four_form" action="https://bucs601.com/submit.php" method="post">
                 
                 <!-- text inputs -->
 
@@ -45,7 +46,7 @@
                 <label for="firstName">First Name (required):</label>
                 <input type="text" name="firstName" id="firstName" required>
 
-                <span id="first_name_error_msg">Error Message</span>
+                <span id="first_name_error_msg" class="feedback">Error Message</span>
 
                 <br>
 
@@ -53,7 +54,7 @@
                 <label for="lastName">Last Name (required):</label>
                 <input type="text" name="lastName" id="lastName" required>
 
-                <span id="last_name_error_msg">Error Message</span>
+                <span id="last_name_error_msg" class="feedback">Error Message</span>
 
                 <br>
 
@@ -61,7 +62,15 @@
                 <label for="facilitator">Facilitator's Name (required):</label>
                 <input type="text" name="facilitator" id="facilitator" required>
 
-                <span id="facilitator_error_msg">Error Message</span>
+                <span id="facilitator_error_msg" class="feedback">Error Message</span>
+
+                <br>
+
+                <!-- email address -->
+                <label for="email">Your Email Address (required):</label>
+                <input type="email" name="email" id="email" required>
+
+                <span id="email_error_msg" class="feedback">Error Message</span>
 
                 <br>
 
