@@ -69,7 +69,7 @@ p {
 }
 
 
-/* Style the inputs */
+/* Style the inputs and labels */
 input, label {
     color: #444444;
     font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
